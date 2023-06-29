@@ -1,0 +1,102 @@
+html,body{
+    margin:0px;
+    padding:0px;
+    height: 100%;
+}
+body{
+    background-color: burlywood;
+}
+h1{
+    margin: 0;
+}
+.main{
+    display:flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0px 50px 0 50px;
+}
+.menu-card{
+    display: flex;
+    flex-flow: column;
+    height: 400px;
+    width: 300px;
+    margin: 10px;
+    border-radius: 10%;
+    border: solid rgb(3, 3, 3);
+    background-color: whitesmoke;
+    
+}
+.item-image-container{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    background-color: transparent;
+    height: 250px;
+    flex:300px;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+
+.item-image{
+    transform: scale(0.7);
+}
+
+.item-title-container{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.item-price{
+    margin-right: 20px;
+}
+.item-title{
+    margin-left: 20px;
+}
+
+.item-ingredients{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0px 20px 15px 20px;
+    text-align: justify;
+    color:rgba(0, 0, 0, 0.74);
+}
+
+.navbar{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin-top: 10px;
+    margin-bottom: 200px;
+    background-color: rgba(0, 0, 0, 0);
+    height: 100px;
+}
+
+#logo-image{
+    float:left;
+    width: 100%;
+    height: 100%;
+}
+.logo{
+    display: flex;
+    flex-flow: column wrap;
+    height: 300px;
+    width:300px;
+}
+
+#menu{
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.menu-card:hover{
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.438);
+}
+.menu-card:hover .item-image{
+    transform: scale(0.87);
+    transition: all 0.5s ease-in-out;
+}
+.item-image{
+    transition: all 0.5s ease-in-out;
+}
