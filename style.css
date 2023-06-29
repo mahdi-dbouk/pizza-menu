@@ -4,7 +4,12 @@ html,body{
     height: 100%;
 }
 body{
-    background-color: burlywood;
+    background-image: url('oven.jpg');
+    background-repeat: repeat;
+    background-position:center;
+    background-size: cover;
+    background-color: rgb(99, 93, 89);
+    background-blend-mode: multiply;
 }
 h1{
     margin: 0;
@@ -23,7 +28,6 @@ h1{
     width: 300px;
     margin: 10px;
     border-radius: 10%;
-    border: solid rgb(3, 3, 3);
     background-color: whitesmoke;
     
 }
@@ -31,7 +35,7 @@ h1{
     display:flex;
     align-items:center;
     justify-content: center;
-    background-color: transparent;
+    background-image: url(woodplate.jpg);
     height: 250px;
     flex:300px;
     border-top-left-radius: 10%;
@@ -86,12 +90,13 @@ h1{
 }
 
 #menu{
+    color:aliceblue;
     font-size: 50px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .menu-card:hover{
-    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.438);
+    box-shadow: 0px 0px 10px 4px rgba(236, 90, 5, 0.438);
 }
 .menu-card:hover .item-image{
     transform: scale(0.87);
