@@ -1,7 +1,6 @@
 html,body{
     margin:0px;
     padding:0px;
-    height: 100%;
 }
 body{
     background-image: url('oven.jpg');
@@ -18,16 +17,16 @@ h1{
     display:flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: space-evenly;
-    padding: 0px 50px 0 50px;
+    justify-content: space-around;
 }
 .menu-card{
     display: flex;
     flex-flow: column;
-    height: 400px;
-    width: 300px;
+    height: 600px;
+    width: 400px;
     margin: 10px;
-    border-radius: 10%;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
     background-color: whitesmoke;
     
 }
@@ -96,12 +95,64 @@ h1{
 }
 
 .menu-card:hover{
-    box-shadow: 0px 0px 10px 4px rgba(236, 90, 5, 0.438);
+    box-shadow: 0px 0px 10px 4px rgba(236, 90, 5, 0.822);
 }
 .menu-card:hover .item-image{
     transform: scale(0.87);
     transition: all 0.5s ease-in-out;
 }
 .item-image{
+    transition: all 0.5s ease-in-out;
+}
+
+.size-and-crust{
+    display:flex;
+    flex-flow: column nowrap;
+}
+.selectors-container{
+    display:flex;
+    flex-flow: row nowrap;
+    margin: 20px;
+}
+
+#selector-label{
+    margin-left: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.size-select,.crust-select{
+    flex:1;
+    margin: 3px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 800;
+    color:rgb(27, 26, 26);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.add-to-cart-container{
+    display:flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.add-to-cart{
+    flex:0.8;
+    height:50px;
+    background-color: chocolate;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.menu-card:hover{
+    transform: scale(1);
+    transition: all 0.5s ease-in-out;
+}
+
+.menu-card{
+    transform: scale(0.8);
     transition: all 0.5s ease-in-out;
 }
