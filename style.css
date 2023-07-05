@@ -3,84 +3,159 @@ html,body{
     padding:0px;
 }
 body{
-    background-image: url('oven.jpg');
+    background-image: url(Assets/oven.jpg);
     background-repeat: repeat;
     background-position:center;
     background-size: cover;
     background-color: rgb(99, 93, 89);
     background-blend-mode: multiply;
 }
-h1{
-    margin: 0;
-}
+
 .main{
+    margin-top: 16px;
     display:flex;
     flex-flow: row wrap;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
 }
+
+.menu-cards-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    height: 95%;
+    width: 95%;
+}
+
 .menu-card{
+    margin: 10px;
     display: flex;
     flex-flow: column;
-    height: 600px;
-    width: 400px;
-    margin: 10px;
-    border-top-left-radius: 20%;
-    border-top-right-radius: 20%;
+    max-width: 280px;
+    max-height: 400px;
     background-color: whitesmoke;
     
 }
+
 .item-image-container{
     display:flex;
     align-items:center;
     justify-content: center;
-    background-image: url(woodplate.jpg);
-    height: 250px;
-    flex:300px;
-    border-top-left-radius: 10%;
-    border-top-right-radius: 10%;
+    background-image: url(Assets/woodplate.jpg);
+    height: 30%;
 }
 
 .item-image{
-    transform: scale(0.7);
+    width: 70%;
 }
 
 .item-title-container{
+    padding:10px;
     display:flex;
     align-items: center;
     justify-content: space-between;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.item-price{
-    margin-right: 20px;
-}
-.item-title{
-    margin-left: 20px;
+    height: 10%;
 }
 
 .item-ingredients{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 10px;
     margin: 0px 20px 15px 20px;
     text-align: justify;
     color:rgba(0, 0, 0, 0.74);
+    height: 10%;
 }
+
+
+.menu-card:hover{
+    box-shadow: 0px 0px 10px 4px rgba(14, 13, 13, 0.822);
+}
+
+.menu-card:hover .item-image{
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+}
+
+.item-image{
+    transition: all 0.5s ease-in-out;
+}
+
+.size-and-crust{
+    padding:10px;
+    display:flex;
+    flex-flow: column nowrap;
+    height: 50%;
+}
+
+.selectors-container{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    height: 25%;
+}
+
+#selector-label{
+    justify-self: start;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 5px;
+}
+
+h3{
+    margin:0;
+}
+
+.size-select,.crust-select{
+    height: 35px;
+    font-size: 14px;
+    font-weight: 800;
+    color:rgb(27, 26, 26);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.size-select{
+    flex-grow: 2;
+}
+
+.crust-select{
+    flex-grow: 1;
+}
+
+.add-to-cart-container{
+    padding:10px;
+    display:flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-to-cart{
+    height:35px;
+    width: 95%;
+    background-color: rgb(161, 18, 18);
+    color:aliceblue;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+}
+
+.add-to-cart:hover{
+    cursor: pointer;
+    background-color: rgb(114, 13, 13);;
+}
+
 
 .navbar{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
+    height: 19vh;
     margin-top: 10px;
-    margin-bottom: 200px;
-    background-color: rgba(0, 0, 0, 0);
-    height: 100px;
+    background-color: rgb(161, 18, 18);
 }
 
-#logo-image{
-    float:left;
-    width: 100%;
-    height: 100%;
-}
 .logo{
     display: flex;
     flex-flow: column wrap;
@@ -88,71 +163,73 @@ h1{
     width:300px;
 }
 
-#menu{
-    color:aliceblue;
-    font-size: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+.logo-div, #logo-image{
+    width: 53px;
+    height: 37px;
 }
 
-.menu-card:hover{
-    box-shadow: 0px 0px 10px 4px rgba(236, 90, 5, 0.822);
-}
-.menu-card:hover .item-image{
-    transform: scale(0.87);
-    transition: all 0.5s ease-in-out;
-}
-.item-image{
-    transition: all 0.5s ease-in-out;
-}
-
-.size-and-crust{
+.navbar-flex-container{
+    margin:0;
+    padding-top:10px;
     display:flex;
-    flex-flow: column nowrap;
-}
-.selectors-container{
-    display:flex;
-    flex-flow: row nowrap;
-    margin: 20px;
-}
-
-#selector-label{
-    margin-left: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.size-select,.crust-select{
-    flex:1;
-    margin: 3px;
-    height: 50px;
-    font-size: 18px;
-    font-weight: 800;
-    color:rgb(27, 26, 26);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-}
-.add-to-cart-container{
-    display:flex;
-    flex-flow: row nowrap;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 15px;
+    justify-items: center;
+    width: 100%;
 }
-.add-to-cart{
-    flex:0.8;
-    height:50px;
-    background-color: chocolate;
-    font-size: 15px;
-    font-weight: bold;
+
+.title{
+    margin:0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.menu-card:hover{
-    transform: scale(1);
-    transition: all 0.5s ease-in-out;
+.title h1{
+    margin:0;
 }
 
-.menu-card{
-    transform: scale(0.8);
-    transition: all 0.5s ease-in-out;
+
+
+.tabs-div-flex-container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
 }
+
+.tabs-div-container{
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.363);
+}
+
+.tabs-flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:60%;
+}
+
+.tabs-flex-item{
+    flex-grow: 1;
+}
+
+.tab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color:aliceblue;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    height: 39px;
+}
+
+.tab:hover {
+    background-color: black;
+    color:aliceblue;
+}
+
