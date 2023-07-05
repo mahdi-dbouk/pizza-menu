@@ -44,12 +44,14 @@ body{
     display:flex;
     align-items:center;
     justify-content: center;
-    background-image: url(Assets/woodplate.jpg);
+    background-image: url(Assets/plate.avif);
+    background-position: center;
+    background-size: 100%;
     height: 30%;
 }
 
 .item-image{
-    width: 70%;
+    width: 80%;
 }
 
 .item-title-container{
