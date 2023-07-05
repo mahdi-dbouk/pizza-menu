@@ -3,12 +3,11 @@ html,body{
     padding:0px;
 }
 body{
-    background-image: url(Assets/oven.jpg);
+    background-image: url(Assets/background.jpg);
     background-repeat: repeat;
     background-position:center;
-    background-size: cover;
-    background-color: rgb(99, 93, 89);
-    background-blend-mode: multiply;
+    background-size: contain;
+    background-color: aliceblue;
 }
 
 .main{
@@ -35,7 +34,7 @@ body{
     flex-flow: column;
     max-width: 280px;
     max-height: 400px;
-    background-color: whitesmoke;
+    background-color: white;
     
 }
 
@@ -151,11 +150,14 @@ h3{
 }
 
 .cart-container{
-    height: 80vh;
+    height: 100%;
     width: 20%;
 }
 
 .cart{
+    position: fixed;
+    margin-right: 20px;
+    height: 40vh;
     padding: 20px;
     text-align: center;
     background-color: white;
@@ -177,7 +179,7 @@ h3{
 }
 
 .cart-items{
-    height:70vh;
+    height:35vh;
 }
 
 
