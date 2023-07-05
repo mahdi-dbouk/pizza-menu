@@ -15,8 +15,7 @@ body{
     margin-top: 16px;
     display:flex;
     flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .menu-cards-container{
@@ -27,7 +26,7 @@ body{
     align-items: center;
     align-content: space-around;
     height: 95%;
-    width: 95%;
+    width: 78%;
 }
 
 .menu-card{
@@ -149,6 +148,41 @@ h3{
 .add-to-cart:hover{
     cursor: pointer;
     background-color: rgb(114, 13, 13);;
+}
+
+.cart-container{
+    height: 80vh;
+    width: 20%;
+}
+
+.cart{
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 0px 10px 4px rgba(250, 21, 21, 0.418)
+}
+
+#cart-title{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: #888585;
+}
+#cart-title::before, #cart-title::after{
+    content:"______";
+}
+
+.empty-icon{
+    width: 30%;
+}
+
+.cart-items{
+    height:70vh;
+}
+
+
+#cart-message{
+    color: #888585;
 }
 
 
